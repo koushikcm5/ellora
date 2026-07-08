@@ -1,6 +1,14 @@
-import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { HiOutlineClock, HiOutlineStar, HiOutlineUserGroup, HiOutlineEye } from 'react-icons/hi'
-import aboutImg from '../assets/images/Resort.png'
+import img0 from '../assets/images/Resort.png'
+import img1 from '../assets/images/elloras-middle-mist-mangalamkombu-dindigul-resorts-azbphyyyn2.webp'
+import img2 from '../assets/images/elloras-middle-mist-mangalamkombu-dindigul-resorts-bkd382t27g.jpg'
+import img3 from '../assets/images/elloras-middle-mist-mangalamkombu-dindigul-resorts-hs69uln62z.jpg'
+import img4 from '../assets/images/elloras-middle-mist-mangalamkombu-dindigul-resorts-ikt105hz43.jpg'
+import img5 from '../assets/images/unnamed (1).webp'
+
+const SLIDES = [img0, img1, img2, img3, img4, img5]
 
 const STATS = [
   { icon: HiOutlineClock, value: '24/7', label: 'Service' },
@@ -15,6 +23,13 @@ const fadeUp = {
 }
 
 export default function About() {
+  const [idx, setIdx] = useState(0)
+
+  useEffect(() => {
+    const t = setInterval(() => setIdx((i) => (i + 1) % SLIDES.length), 5000)
+    return () => clearInterval(t)
+  }, [])
+
   return (
     <section id="about" className="relative overflow-hidden bg-sand/20 py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center lg:px-10">
@@ -25,13 +40,19 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="group relative overflow-hidden rounded-3xl shadow-2xl">
-            <img
-              src={aboutImg}
-              alt="Ellora's MIDDLE MIST resort nestled among misty hills"
-              className="h-[480px] w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              loading="lazy"
-            />
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[480px]">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={idx}
+                src={SLIDES[idx]}
+                alt="Ellora's MIDDLE MIST resort"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </AnimatePresence>
           </div>
           <div className="absolute -bottom-8 -right-6 hidden w-48 rounded-2xl border border-white/60 bg-white/90 p-5 shadow-2xl backdrop-blur-md sm:block">
             <p className="font-display text-3xl font-bold text-forest-dark">4.7★</p>
