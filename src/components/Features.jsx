@@ -46,8 +46,8 @@ export default function Features() {
     <section id="why-us" className="relative bg-mist-light/20 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-label font-semibold tracking-wider text-sm uppercase text-forest-dark">Why Choose Us</p>
-          <h2 className="mt-4 font-display text-3xl text-forest-dark sm:text-4xl">
+          <p className="section-label font-semibold tracking-wider text-sm uppercase text-primary-dark">Why Choose Us</p>
+          <h2 className="mt-4 font-display text-3xl text-primary-dark sm:text-4xl">
             Hospitality Built Around Your Peace of Mind
           </h2>
         </div>
@@ -63,10 +63,10 @@ export default function Features() {
               whileHover={{ y: -8 }}
               className="group rounded-2xl border border-mist/20 bg-white p-8 transition-colors hover:border-mist hover:shadow-lg"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-mist/20 text-forest transition-colors group-hover:bg-mist group-hover:text-forest-dark">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-mist/20 text-primary transition-colors group-hover:bg-mist group-hover:text-primary-dark">
                 <feature.icon className="text-2xl" />
               </div>
-              <h3 className="font-display text-lg text-forest-dark">{feature.title}</h3>
+              <h3 className="font-display text-lg text-primary-dark">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-custom">{feature.desc}</p>
             </motion.div>
           ))}

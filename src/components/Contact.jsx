@@ -19,7 +19,7 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <p className="section-label text-mist-dark">Get in Touch</p>
-          <h2 className="mt-4 font-display text-3xl text-forest-dark sm:text-4xl">Plan Your Stay With Us</h2>
+          <h2 className="mt-4 font-display text-3xl text-primary-dark sm:text-4xl">Plan Your Stay With Us</h2>
         </div>
 
         <div className="mt-16 grid gap-10 lg:grid-cols-5">
@@ -31,7 +31,7 @@ export default function Contact() {
             className="lg:col-span-2"
           >
             <div className="rounded-3xl border border-mist/15 bg-white p-8 shadow-sm">
-              <h3 className="font-display text-xl text-forest-dark">Ellora&rsquo;s MIDDLE MIST</h3>
+              <h3 className="font-display text-xl text-primary-dark">Ellora&rsquo;s MIDDLE MIST</h3>
 
               <div className="mt-6 space-y-5 text-slate-custom">
                 <div className="flex gap-3">
@@ -40,7 +40,7 @@ export default function Contact() {
                 </div>
                 <div className="flex gap-3">
                   <HiOutlinePhone className="mt-0.5 shrink-0 text-xl text-mist-dark" />
-                  <a href="tel:08778334428" className="hover:text-forest">087783 34428</a>
+                  <a href="tel:08778334428" className="hover:text-primary">087783 34428</a>
                 </div>
                 <div className="flex gap-3">
                   <HiOutlineClock className="mt-0.5 shrink-0 text-xl text-mist-dark" />
@@ -48,7 +48,7 @@ export default function Contact() {
                 </div>
                 <div className="flex gap-3">
                   <HiOutlineMail className="mt-0.5 shrink-0 text-xl text-mist-dark" />
-                  <a href="mailto:ellorasmiddlemist@gmail.com" className="hover:text-forest">
+                  <a href="mailto:ellorasmiddlemist@gmail.com" className="hover:text-primary">
                     ellorasmiddlemist@gmail.com
                   </a>
                 </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                   required
                   value={form.name}
                   onChange={handleChange}
-                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-forest"
+                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
                   placeholder="Your full name"
                 />
               </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                   required
                   value={form.phone}
                   onChange={handleChange}
-                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-forest"
+                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
                   placeholder="Your phone number"
                 />
               </div>
@@ -115,7 +115,7 @@ export default function Contact() {
                   required
                   value={form.email}
                   onChange={handleChange}
-                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-forest"
+                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
                   placeholder="you@email.com"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                   rows={4}
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-forest"
+                  className="w-full rounded-xl border border-mist/25 px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
                   placeholder="Tell us about your planned stay&hellip;"
                 />
               </div>
@@ -138,13 +138,13 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="btn-focus mt-6 w-full rounded-full bg-forest px-8 py-3.5 text-sm font-semibold text-[#ffffff] transition-colors hover:bg-forest-dark sm:w-auto"
+              className="btn-focus mt-6 w-full rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-[#ffffff] transition-colors hover:bg-primary-dark sm:w-auto"
             >
               Send Inquiry
             </button>
 
             {status === 'sent' && (
-              <p className="mt-4 text-sm font-medium text-forest" role="status">
+              <p className="mt-4 text-sm font-medium text-primary" role="status">
                 Thank you &mdash; your inquiry has been received. Our team will reach out shortly.
               </p>
             )}

@@ -22,8 +22,8 @@ export default function Hero() {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* Deep dark-green overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-forest-dark/95 via-forest-dark/85 to-forest-dark/95" />
+      {/* Deep dark-blue overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/95 via-primary-dark/85 to-primary-dark/95" />
       {/* Top & bottom vignette for extra depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/60" />
       <MistLayer tone="dark" />
@@ -65,7 +65,7 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="btn-focus rounded-full bg-sand px-8 py-3.5 text-sm font-semibold text-forest-dark shadow-lg transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-xl"
+            className="btn-focus rounded-full bg-sand px-8 py-3.5 text-sm font-semibold text-primary-dark shadow-lg transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-xl"
           >
             Book Your Stay
           </a>

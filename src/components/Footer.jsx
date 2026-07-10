@@ -6,7 +6,7 @@ const QUICK_LINKS = ['Home', 'About', 'Why Us', 'Reviews', 'Gallery', 'Experienc
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-dark text-mist-light">
+    <footer className="bg-primary-dark text-mist-light">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -21,21 +21,21 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-forest-dark"
+                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-primary-dark"
               >
                 <FaInstagram className="text-lg" />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-forest-dark"
+                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-primary-dark"
               >
                 <FaFacebookF className="text-lg" />
               </a>
               <a
                 href="https://wa.me/918778334428"
                 aria-label="WhatsApp"
-                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-forest-dark"
+                className="btn-focus flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white transition-all hover:-translate-y-1 hover:bg-sand hover:text-primary-dark"
               >
                 <FaWhatsapp className="text-lg" />
               </a>
@@ -81,7 +81,7 @@ export default function Footer() {
             </p>
             <a
               href="#contact"
-              className="btn-focus mt-5 inline-block rounded-full bg-sand px-6 py-2.5 text-sm font-semibold text-forest-dark shadow-md transition-all hover:-translate-y-0.5 hover:bg-white"
+              className="btn-focus mt-5 inline-block rounded-full bg-sand px-6 py-2.5 text-sm font-semibold text-primary-dark shadow-md transition-all hover:-translate-y-0.5 hover:bg-white"
             >
               Send Inquiry
             </a>

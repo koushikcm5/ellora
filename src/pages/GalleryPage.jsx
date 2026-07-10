@@ -11,7 +11,7 @@ export default function GalleryPage() {
         className="mx-auto max-w-7xl px-6 pt-12 text-center lg:px-10"
       >
         <p className="section-label text-mist-dark">Visual Tour</p>
-        <h1 className="mt-4 font-display text-4xl text-forest-dark">The Full Gallery</h1>
+        <h1 className="mt-4 font-display text-4xl text-primary-dark">The Full Gallery</h1>
         <p className="mx-auto mt-3 max-w-xl text-slate-custom">
           Browse every corner of Ellora&rsquo;s MIDDLE MIST &mdash; rooms, grounds, and the misty
           hills that surround them.

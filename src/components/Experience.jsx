@@ -40,8 +40,8 @@ export default function Experience() {
     <section id="experience" className="relative bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-label font-semibold tracking-wider text-sm uppercase text-forest">The Experience</p>
-          <h2 className="mt-4 font-display text-3xl text-forest-dark sm:text-4xl">Moments Worth Slowing Down For</h2>
+          <p className="section-label font-semibold tracking-wider text-sm uppercase text-primary">The Experience</p>
+          <h2 className="mt-4 font-display text-3xl text-primary-dark sm:text-4xl">Moments Worth Slowing Down For</h2>
         </div>
 
         <div className="relative mt-24">
@@ -61,7 +61,7 @@ export default function Experience() {
                   className="relative flex flex-col lg:flex-row lg:items-center lg:py-8"
                 >
                   {/* Route Map Node (Icon) */}
-                  <div className="absolute left-[40px] top-0 z-10 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-2 border-mist bg-white text-forest shadow-sm transition-colors hover:border-forest-dark hover:bg-forest-dark hover:text-white lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:hover:scale-110">
+                  <div className="absolute left-[40px] top-0 z-10 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-2 border-mist bg-white text-primary shadow-sm transition-colors hover:border-primary-dark hover:bg-primary-dark hover:text-white lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:hover:scale-110">
                     <moment.icon className="text-xl" />
                   </div>
 
@@ -79,11 +79,11 @@ export default function Experience() {
                     }`}
                   >
                     <div className="relative inline-block w-full max-w-md rounded-2xl border border-mist/20 bg-white/70 p-8 text-left shadow-sm backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-mist/40 hover:bg-white hover:shadow-lg">
-                      <span className="mb-3 block font-semibold tracking-widest text-[11px] uppercase text-forest/70">
+                      <span className="mb-3 block font-semibold tracking-widest text-[11px] uppercase text-primary/70">
                         Stop {String(i + 1).padStart(2, '0')}
                       </span>
-                      <h3 className="font-display text-2xl text-forest-dark">{moment.title}</h3>
-                      <p className="mt-3 leading-relaxed text-forest-dark/80">{moment.desc}</p>
+                      <h3 className="font-display text-2xl text-primary-dark">{moment.title}</h3>
+                      <p className="mt-3 leading-relaxed text-primary-dark/80">{moment.desc}</p>
                     </div>
                   </div>
 

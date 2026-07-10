@@ -63,8 +63,8 @@ export default function Navbar() {
                   href={link.hash}
                   className={`text-sm tracking-wide transition-colors ${
                     activeSection === link.hash
-                      ? 'font-bold text-forest'
-                      : 'font-medium text-forest-dark/70 hover:text-forest'
+                      ? 'font-bold text-primary'
+                      : 'font-medium text-primary-dark/70 hover:text-primary'
                   }`}
                 >
                   {link.label}
@@ -74,8 +74,8 @@ export default function Navbar() {
                   to={`/${link.hash}`}
                   className={`text-sm tracking-wide transition-colors ${
                     activeSection === link.hash
-                      ? 'font-bold text-forest'
-                      : 'font-medium text-forest-dark/70 hover:text-forest'
+                      ? 'font-bold text-primary'
+                      : 'font-medium text-primary-dark/70 hover:text-primary'
                   }`}
                 >
                   {link.label}
@@ -88,14 +88,14 @@ export default function Navbar() {
         <div className="hidden items-center gap-4 lg:flex">
           <a
             href="tel:08778334428"
-            className="flex items-center gap-2 text-sm font-semibold transition-colors text-forest-dark hover:text-forest"
+            className="flex items-center gap-2 text-sm font-semibold transition-colors text-primary-dark hover:text-primary"
           >
             <HiOutlinePhone className="text-base" />
             087783 34428
           </a>
           <a
             href="#contact"
-            className="btn-focus rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-forest shadow-sm border border-mist/20 transition-all hover:-translate-y-0.5 hover:shadow-md hover:text-forest-dark"
+            className="btn-focus rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-primary shadow-sm border border-mist/20 transition-all hover:-translate-y-0.5 hover:shadow-md hover:text-primary-dark"
           >
             Book Your Stay
           </a>
@@ -103,7 +103,7 @@ export default function Navbar() {
 
         <button
           aria-label={open ? 'Close menu' : 'Open menu'}
-          className="btn-focus text-2xl lg:hidden transition-colors text-forest-dark"
+          className="btn-focus text-2xl lg:hidden transition-colors text-primary-dark"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <HiOutlineX /> : <HiOutlineMenu />}
@@ -126,8 +126,8 @@ export default function Navbar() {
                     href={isHome ? link.hash : `/${link.hash}`}
                     className={`block rounded-lg px-3 py-3 text-base transition-colors ${
                       activeSection === link.hash
-                        ? 'font-bold text-forest bg-mist/15'
-                        : 'font-medium text-forest-dark/80 hover:bg-mist/10 hover:text-forest'
+                        ? 'font-bold text-primary bg-mist/15'
+                        : 'font-medium text-primary-dark/80 hover:bg-mist/10 hover:text-primary'
                     }`}
                   >
                     {link.label}
@@ -137,7 +137,7 @@ export default function Navbar() {
               <li className="pt-2">
                 <a
                   href="#contact"
-                  className="block rounded-full bg-white border border-mist/20 px-6 py-3 text-center text-sm font-semibold text-forest shadow-sm hover:text-forest-dark"
+                  className="block rounded-full bg-white border border-mist/20 px-6 py-3 text-center text-sm font-semibold text-primary shadow-sm hover:text-primary-dark"
                 >
                   Book Your Stay
                 </a>

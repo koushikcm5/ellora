@@ -81,8 +81,8 @@ export default function Gallery() {
     <section id="gallery" className="relative bg-white-mist py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-label font-semibold tracking-wider text-sm uppercase text-forest">Gallery</p>
-          <h2 className="mt-4 font-display text-3xl text-forest-dark sm:text-4xl">A Glimpse Into the Mist</h2>
+          <p className="section-label font-semibold tracking-wider text-sm uppercase text-primary">Gallery</p>
+          <h2 className="mt-4 font-display text-3xl text-primary-dark sm:text-4xl">A Glimpse Into the Mist</h2>
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -92,8 +92,8 @@ export default function Gallery() {
               onClick={() => setFilter(cat)}
               className={`btn-focus rounded-full px-5 py-2 text-sm font-medium transition-colors ${
                 filter === cat
-                  ? 'bg-forest text-[#ffffff]'
-                  : 'bg-white text-forest-dark hover:bg-mist/10 hover:text-forest'
+                  ? 'bg-primary text-[#ffffff]'
+                  : 'bg-white text-primary-dark hover:bg-mist/10 hover:text-primary'
               }`}
             >
               {cat}
@@ -118,7 +118,7 @@ export default function Gallery() {
                 loading="lazy"
                 className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-forest-dark/70 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-primary-dark/70 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100">
                 <span className="p-4 text-sm font-medium text-[#ffffff]">{img.category}</span>
               </div>
             </motion.button>
@@ -132,7 +132,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-forest-dark/95 p-4"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-primary-dark/95 p-4"
             onClick={close}
           >
             <button

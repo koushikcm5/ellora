@@ -55,8 +55,8 @@ export default function About() {
             </AnimatePresence>
           </div>
           <div className="absolute -bottom-8 -right-6 hidden w-48 rounded-2xl border border-white/60 bg-white/90 p-5 shadow-2xl backdrop-blur-md sm:block">
-            <p className="font-display text-3xl font-bold text-forest-dark">4.7★</p>
-            <p className="mt-1 text-[10px] font-semibold uppercase tracking-widest text-forest-dark/70">from real guest reviews</p>
+            <p className="font-display text-3xl font-bold text-primary-dark">4.7★</p>
+            <p className="mt-1 text-[10px] font-semibold uppercase tracking-widest text-primary-dark/70">from real guest reviews</p>
           </div>
         </motion.div>
 
@@ -66,24 +66,24 @@ export default function About() {
           viewport={{ once: true, amount: 0.3 }}
           variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
         >
-          <motion.p variants={fadeUp} transition={{ duration: 0.6 }} className="section-label font-semibold tracking-wider text-sm uppercase text-forest">
+          <motion.p variants={fadeUp} transition={{ duration: 0.6 }} className="section-label font-semibold tracking-wider text-sm uppercase text-primary">
             About the Resort
           </motion.p>
           <motion.h2
             variants={fadeUp}
             transition={{ duration: 0.7 }}
-            className="mt-4 font-display text-3xl text-forest-dark sm:text-4xl"
+            className="mt-4 font-display text-3xl text-primary-dark sm:text-4xl"
           >
             Welcome to Ellora&rsquo;s MIDDLE MIST
           </motion.h2>
-          <motion.p variants={fadeUp} transition={{ duration: 0.7 }} className="mt-6 leading-relaxed text-forest-dark/90">
+          <motion.p variants={fadeUp} transition={{ duration: 0.7 }} className="mt-6 leading-relaxed text-primary-dark/90">
             Tucked into the hills of Mangalamkombu, Ellora&rsquo;s MIDDLE MIST is built around one idea:
             stillness. Our rooms are kept hygienic and comfortable, our grounds are calm enough for
             an evening walk in the clouds, and our team is on hand around the clock so families and
             friends can simply relax. Wake to mist rolling across the valley, and spend your days
             close to the region&rsquo;s best-loved viewpoints and tourist spots.
           </motion.p>
-          <motion.p variants={fadeUp} transition={{ duration: 0.7 }} className="mt-4 leading-relaxed text-forest-dark/90">
+          <motion.p variants={fadeUp} transition={{ duration: 0.7 }} className="mt-4 leading-relaxed text-primary-dark/90">
             Whether you&rsquo;re here for a weekend reset or a longer family holiday, every detail
             &mdash; from housekeeping to the view from your window &mdash; is shaped around genuine,
             attentive hospitality.
@@ -99,9 +99,9 @@ export default function About() {
                 key={stat.label}
                 className="rounded-2xl border border-mist/15 bg-white p-5 text-center shadow-sm transition-transform hover:-translate-y-1"
               >
-                <stat.icon className="mx-auto mb-2 text-2xl text-forest" />
-                <p className="font-display text-lg text-forest-dark">{stat.value}</p>
-                <p className="text-xs text-forest-dark/80">{stat.label}</p>
+                <stat.icon className="mx-auto mb-2 text-2xl text-primary" />
+                <p className="font-display text-lg text-primary-dark">{stat.value}</p>
+                <p className="text-xs text-primary-dark/80">{stat.label}</p>
               </div>
             ))}
           </motion.div>

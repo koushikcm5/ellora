@@ -10,12 +10,12 @@ export default {
           dark: '#5A7A7C',
         },
         'white-mist': '#F4F6F7',
-        forest: {
-          DEFAULT: '#4A7C6B',
-          dark: '#2A4B40',
+        primary: {
+          DEFAULT: '#0369A1',
+          dark: '#0C4A6E',
         },
         slate: {
-          custom: '#54635F',
+          custom: '#334155',
         },
         sand: {
           DEFAULT: '#EFE4D7',

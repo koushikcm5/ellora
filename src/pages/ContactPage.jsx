@@ -11,7 +11,7 @@ export default function ContactPage() {
         className="mx-auto max-w-7xl px-6 pt-12 text-center lg:px-10"
       >
         <p className="section-label text-mist-dark">We&rsquo;d Love to Host You</p>
-        <h1 className="mt-4 font-display text-4xl text-forest-dark">Get in Touch</h1>
+        <h1 className="mt-4 font-display text-4xl text-primary-dark">Get in Touch</h1>
         <p className="mx-auto mt-3 max-w-xl text-slate-custom">
           Reach out for bookings, group stays, or any questions about Ellora&rsquo;s MIDDLE MIST.
         </p>
